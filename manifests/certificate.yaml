@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: pipe-jet7960-apivvv-certificate
+  namespace: pipe-jet7960-apivvv
+spec:
+  secretName: pipe-jet7960-apivvv-secret-tls
+  commonName: pipe-jet7960-apivvv.assessify.org
+  dnsNames:
+  - pipe-jet7960-apivvv.assessify.org
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
