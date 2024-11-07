@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: pipe-jet7960-apivvv-https-ingress
+  namespace: pipe-jet7960-apivvv
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - pipe-jet7960-apivvv.assessify.org
+      secretName: pipe-jet7960-apivvv-secret-tls
+  rules:
+    - host: pipe-jet7960-apivvv.assessify.org
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: pipe-jet7960-apivvv-service
+                port:
+                  number: 8120
