@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pipe-jet7960-apivvv-deployment
+  labels:
+    app: pipe-jet7960-apivvv
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pipe-jet7960-apivvv
+  template:
+    metadata:
+      labels:
+        app: pipe-jet7960-apivvv
+    spec:
+      containers:
+        - name: pipe-jet7960-apivvv-container
+          image: pipejet/pipe-jet7960-apivvv:0
+          ports:
+            - containerPort: 8080
