@@ -5,7 +5,7 @@ metadata:
   namespace: argocd
   annotations:
     # notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "-1002195638358"
-    notifications.argocd.argoproj.io/subscribe.on-sync-succeeded: '["sync-complete"]'
+    notifications.argocd.argoproj.io/subscribe.on-sync-succeeded: ["sync-complete"]
   # finalizers:
   #   - resources-finalizer.argocd.argoproj.io
 
