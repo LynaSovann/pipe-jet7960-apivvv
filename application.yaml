@@ -4,10 +4,10 @@ metadata:
   name: pipe-jet7960-apivvv
   namespace: argocd
   annotations:
-    notifications.argocd.argoproj.io/subscribe.on-sync-succeeded: "sync-success"
+    # notifications.argocd.argoproj.io/subscribe.on-sync-succeeded: "sync-success"
     notifications.argocd.argoproj.io/subscribe.on-sync-succeeded: "updateDeploymentStatusTrigger"
     # notifications.argocd.argoproj.io/subscribe.on-sync-succeeded: '["updateDeploymentStatusTrigger"]'
-    notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "-4544443809"
+    # notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "-4544443809"
     # notifications.argoproj.io/subscribe.lynaTrigger.lynaWebhook: ""
   finalizers:
     - resources-finalizer.argocd.argoproj.io
