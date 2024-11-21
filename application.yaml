@@ -4,9 +4,9 @@ metadata:
   name: pipe-jet7960-apivvv
   namespace: argocd
   annotations:
-    notifications.argocd.argoproj.io/subscribe.on-sync-succeeded: '["updateDeploymentStatusTrigger"]'
+    # notifications.argocd.argoproj.io/subscribe.on-sync-succeeded: '["updateDeploymentStatusTrigger"]'
     # notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "-1002195638358"
-    # notifications.argoproj.io/subscribe.updateDeploymentStatusTrigger.updateDeploymentStatusWebhook: ""
+    notifications.argoproj.io/subscribe.updateDeploymentStatusTrigger.updateDeploymentStatusWebhook: "updateDeploymentStatusTrigger"
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 
