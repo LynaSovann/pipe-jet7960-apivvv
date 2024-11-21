@@ -6,7 +6,7 @@ metadata:
   annotations:
     # notifications.argocd.argoproj.io/subscribe.on-sync-succeeded: '["updateDeploymentStatusTrigger"]'
     # notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "-1002195638358"
-    notifications.argoproj.io/subscribe.updateDeploymentStatusTrigger.updateDeploymentStatusWebhook: "updateDeploymentStatusTrigger"
+    notifications.argoproj.io/subscribe.updateDeploymentStatusTrigger.updateDeploymentStatusWebhook: ""
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 
