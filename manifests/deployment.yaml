@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: pipe-jet7960-apivvv-container
-          image: pipejet/pipe-jet7960-apivvv:52
+          image: pipejet/pipe-jet7960-apivvv:53
           ports:
             - containerPort: 8080
